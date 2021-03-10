@@ -46,6 +46,23 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.white,
+        actions: <Widget>[
+          Padding(
+            padding: EdgeInsets.only(right: 20, top: 20),
+            child: Text(
+              'Skip',
+              style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w400),
+            ),
+          )
+        ],
+      ),
       body: SafeArea(
         child: Stack(
           children: <Widget>[
