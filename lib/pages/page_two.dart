@@ -17,7 +17,7 @@ class _PageTwoState extends State<PageTwo> {
           height: 20,
         ),
         Expanded(
-          flex: 3,
+          flex: 2,
           child: SvgPicture.asset('images/On_the_way.svg'),
         ),
         Flexible(

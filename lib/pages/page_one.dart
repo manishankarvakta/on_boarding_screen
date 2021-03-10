@@ -17,7 +17,7 @@ class _PageOneState extends State<PageOne> {
           height: 20,
         ),
         Expanded(
-          flex: 3,
+          flex: 2,
           child: SvgPicture.asset('images/online_groceries.svg'),
         ),
         Flexible(

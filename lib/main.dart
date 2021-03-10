@@ -56,9 +56,10 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Text(
               'Skip',
               style: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 18,
-                  fontWeight: FontWeight.w400),
+                color: Colors.grey,
+                fontSize: 18,
+                fontWeight: FontWeight.w400,
+              ),
             ),
           )
         ],
@@ -87,7 +88,19 @@ class _MyHomePageState extends State<MyHomePage> {
                   new DotsIndicator(
                     dotsCount: pageLength,
                     position: currentPageIndex.toDouble(),
-                  )
+                    decorator: DotsDecorator(
+                      color: Colors.grey, // Inactive color
+                      activeColor: Colors.orange,
+                      size: const Size.square(9.0),
+                      activeSize: const Size(25.0, 9.0),
+                      activeShape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5.0),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 50,
+                  ),
                 ],
               ),
             ),

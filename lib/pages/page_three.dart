@@ -17,7 +17,7 @@ class _PageThreeState extends State<PageThree> {
           height: 20,
         ),
         Expanded(
-          flex: 3,
+          flex: 2,
           child: SvgPicture.asset('images/deliveries.svg'),
         ),
         Flexible(
